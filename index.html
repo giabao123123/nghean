@@ -1,0 +1,3407 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <title>Nghệ An</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./logo nghệ an/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <aside class="box w3-right neon-box2" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Nghệ An!</p>
+    </aside>
+
+    <header class="w3-top">
+      <nav class="w3-bar w3-white w3-padding w3-card">
+        <a href="#home" class="w3-bar-item neon-box">Nghệ An</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoinghean/">TRÒ CHƠI</a>
+          </li>
+        </ul>
+
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+
+        <nav
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <section class="menu-scroll">
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoinghean/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </section>
+        </nav>
+      </nav>
+    </header>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-animate-left" id="about">
+        <header>
+          <h1 class="w3-center" style="color: red; font-size: 35px">
+            LỊCH SỬ HÌNH THÀNH
+          </h1>
+        </header>
+        <article>
+          <p>
+            <strong><mark>1. Thời kỳ đầu và các cuộc khởi nghĩa</mark></strong>
+          </p>
+          <p>
+            Nghệ An là một vùng đất có lịch sử lâu đời, với nhiều sự kiện quan
+            trọng. Vào khoảng <u>năm 670-723</u>, vùng đất này từng là thủ đô
+            của cuộc khởi nghĩa chống nhà Đường của
+            <strong><mark>Mai Thúc Loan</mark></strong
+            >, người lãnh đạo cuộc chiến đấu giành lại độc lập cho đất nước.
+            Kinh đô của Mai Thúc Loan được đặt tại <mark>Hoan Châu</mark>, nay
+            thuộc Nghệ An, nơi ông và quân đội của mình đã chiến đấu chống lại
+            sự xâm lược của nhà Đường (Trung Quốc). Cuộc khởi nghĩa này dù không
+            thành công, nhưng đã để lại dấu ấn lớn trong lịch sử chống ngoại xâm
+            của dân tộc.
+          </p>
+
+          <p>
+            Đến <u>năm 1788</u>, dưới triều đại nhà Tây Sơn,
+            <strong><mark>Quang Trung</mark></strong> đã chỉ đạo xây dựng thủ đô
+            của nhà Tây Sơn tại Nghệ An để tăng cường sức mạnh cho quân đội và
+            tổ chức cuộc kháng chiến chống lại sự xâm lược của quân đội nhà
+            Nguyễn và các thế lực bên ngoài. Vị trí này đóng vai trò quan trọng
+            trong chiến lược của nhà Tây Sơn, đồng thời cũng là nơi nhiều sự
+            kiện lịch sử lớn của đất nước diễn ra.
+          </p>
+
+          <p>
+            <strong
+              ><mark
+                >2. Thời kỳ nhà Nguyễn và sự thay đổi lãnh thổ</mark
+              ></strong
+            >
+          </p>
+          <p>
+            Vào <u>năm 1802</u>, sau khi lên ngôi,
+            <strong><mark>Nguyễn Ánh</mark></strong> (sau này là Gia Long) đã
+            phải nhờ đến sự viện trợ của
+            <strong><mark>Xiêm La</mark></strong> (nay là Thái Lan) và
+            <strong><mark>Vạn Tượng</mark></strong> (Lào) để đánh bại nhà Tây
+            Sơn. Quân đội Xiêm La và Vạn Tượng đã hợp sức tấn công vào vùng Nghệ
+            An. Tuy nhiên, sự trợ giúp này đã dẫn đến một quyết định có hậu quả
+            lâu dài: Gia Long đồng ý cắt
+            <mark>Trấn Ninh, Trấn Biên, Trấn Định, và Trấn Tĩnh</mark> (khoảng
+            <u>50.000 km²</u>) cho Vạn Tượng, khiến lãnh thổ của Đại Việt ở khu
+            vực Bắc Trung Bộ bị thu hẹp một nửa. Đây là sự kiện quan trọng nhất
+            trong lịch sử Việt Nam, khi một phần lãnh thổ rộng lớn bị cắt nhường
+            cho nước ngoài mà không phải do xâm lược quân sự.
+          </p>
+
+          <p>
+            Hậu quả của việc cắt đất này không chỉ làm suy yếu vị thế của Đại
+            Việt, mà còn ảnh hưởng đến các vấn đề quốc phòng và kiểm soát các
+            lưu vực sông lớn, đặc biệt là sông Mê Kông. Sau khi
+            <strong><mark>Vạn Tượng</mark></strong> bị
+            <strong><mark>Xiêm La</mark></strong> tấn công vào <u>năm 1828</u>,
+            <strong><mark>Minh Mạng</mark></strong> (con của Gia Long) đã tái
+            sáp nhập các vùng đất đã bị cắt cho Vạn Tượng vào Nghệ An và Thanh
+            Hóa, khôi phục lại một phần lãnh thổ đã mất.
+          </p>
+
+          <p>
+            <strong><mark>3. Thời kỳ Pháp thuộc</mark></strong>
+          </p>
+          <p>
+            Trong thời kỳ <strong><mark>Pháp thuộc</mark></strong
+            >, vùng đất Nghệ An tiếp tục chứng kiến những thay đổi lớn. Một số
+            khu vực từng thuộc về Nghệ An lại bị nhượng cho Lào theo các thỏa
+            thuận chính trị, làm cho lãnh thổ của Việt Nam ở khu vực Bắc Trung
+            Bộ bị thu hẹp hơn nữa. Các vụ cắt đất này không chỉ ảnh hưởng đến
+            quốc phòng mà còn khiến Việt Nam mất đi quyền kiểm soát một khu vực
+            quan trọng của lưu vực sông Mê Kông. Điều này tiếp tục ảnh hưởng đến
+            nền kinh tế và chiến lược quốc gia trong suốt giai đoạn thuộc địa.
+          </p>
+
+          <p>
+            <strong
+              ><mark
+                >4. Thời kỳ hiện đại và các thay đổi hành chính</mark
+              ></strong
+            >
+          </p>
+          <p>
+            Đến cuối thế kỷ 20, <strong><mark>Nghệ An</mark></strong> đã trải
+            qua nhiều thay đổi lớn trong cấu trúc hành chính. <u>Năm 1991</u>,
+            tỉnh <strong><mark>Nghệ Tĩnh</mark></strong> được tách thành hai
+            tỉnh riêng biệt: <strong><mark>Nghệ An</mark></strong> và
+            <strong><mark>Hà Tĩnh</mark></strong
+            >, đánh dấu một bước phát triển quan trọng trong việc quản lý và tổ
+            chức hành chính khu vực.
+          </p>
+
+          <p>
+            Sau khi tách ra, tỉnh Nghệ An đã phát triển mạnh mẽ về kinh tế và xã
+            hội. <u>Năm 1993</u>, thành phố
+            <strong><mark>Vinh</mark></strong> được công nhận là
+            <strong>đô thị loại II</strong>, đồng thời
+            <strong><mark>Cửa Lò</mark></strong> cũng được nâng cấp thành thị xã
+            vào <u>năm 1994</u>. Những bước phát triển này không chỉ cải thiện
+            cơ sở hạ tầng mà còn thu hút đầu tư và phát triển du lịch, đặc biệt
+            là du lịch biển.
+          </p>
+
+          <p>
+            Đến <u>năm 2007</u>, <strong><mark>Thái Hòa</mark></strong> được
+            tách ra thành thị xã, và
+            <strong><mark>Hoàng Mai</mark></strong> cũng được thành lập vào
+            <u>năm 2013</u>. Những thay đổi này đã giúp Nghệ An phát triển đồng
+            đều hơn, với các trung tâm đô thị mới nổi. Đặc biệt, thành phố Vinh
+            được công nhận là <strong>đô thị loại I</strong> vào
+            <u>năm 2008</u>, đánh dấu sự phát triển vượt bậc của thành phố này.
+          </p>
+
+          <p>
+            Trong giai đoạn gần đây, <u>năm 2024</u> và <u>2025</u>, Nghệ An
+            tiếp tục có những thay đổi lớn trong việc sắp xếp lại các đơn vị
+            hành chính cấp huyện và cấp xã. Theo các quyết định của Quốc hội,
+            <strong><mark>thị xã Cửa Lò</mark></strong> sẽ được sáp nhập vào
+            <strong><mark>thành phố Vinh</mark></strong
+            >, và các đơn vị hành chính cấp xã sẽ được tái cấu trúc để nâng cao
+            hiệu quả quản lý.
+          </p>
+
+          <p>
+            <strong><mark>5. Nghệ An trong bối cảnh hiện đại</mark></strong>
+          </p>
+          <p>
+            <strong><mark>Nghệ An</mark></strong> ngày nay là một tỉnh năng
+            động, với nền kinh tế phát triển mạnh mẽ nhờ vào các ngành công
+            nghiệp, nông nghiệp, và đặc biệt là du lịch. Vị trí chiến lược của
+            tỉnh, với cửa biển <strong><mark>Cửa Lò</mark></strong> và nhiều khu
+            di tích lịch sử, tạo nên tiềm năng phát triển lớn cho ngành du lịch.
+            Tỉnh cũng đang đẩy mạnh các dự án đầu tư vào cơ sở hạ tầng và phát
+            triển các khu công nghiệp, tạo nền tảng cho một tương lai thịnh
+            vượng.
+          </p>
+
+          <p>
+            <strong><mark>Nghệ An</mark></strong> tiếp tục là một tỉnh với bề
+            dày lịch sử và văn hóa, đóng góp quan trọng vào sự phát triển chung
+            của Việt Nam.
+          </p>
+
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Ngh%E1%BB%87_An"
+              target="_blank"
+              >wiki Nghệ An</a
+            >
+            )
+          </p>
+        </article>
+        <figure class="w3-center">
+          <img
+            src="https://bcp.cdnchinhphu.vn/Uploaded/hoangtrongdien/2021_08_27/DJI_0210.jpg"
+            class="w3-container"
+            alt=""
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://baochinhphu.vn/xu-ly-mot-so-kien-nghi-cua-ubnd-tinh-nghe-an-102299308.htm"
+              target="_blank"
+              >baochinhphu.vn</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section class="w3-row-padding w3-padding-16 w3-content" id="menu">
+        <header>
+          <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+            ĐỊA LÝ
+          </h1>
+        </header>
+        <article>
+          <p>
+            Trung tâm hành chính của tỉnh là thành phố Vinh, nằm cách thủ đô Hà
+            Nội 291 km về phía nam
+          </p>
+          <p>
+            Tỉnh có địa hình đa dạng: núi, trung du, đồng bằng và ven biển. Phía
+            Tây là dãy núi Bắc Trường Sơn. Tỉnh có 10 huyện miền núi, trong số
+            đó 5 huyện là miền núi "cao".
+          </p>
+          <p>Diện tích của tỉnh khoảng 16.486,49 km².</p>
+          <p><strong>Điểm cực của tỉnh:</strong></p>
+          <ul>
+            <li>
+              Điểm cực Bắc: xã Môn Sơn, huyện Con Cuông, khoảng
+              <u>19°42′B, 104°34′Đ</u>
+            </li>
+            <li>
+              Điểm cực Nam: xã Nghi Xuân, huyện Nghi Lộc, khoảng
+              <u>18°26′B, 105°10′Đ</u>
+            </li>
+            <li>
+              Điểm cực Đông: xã Quỳnh Phương, thị xã Hoàng Mai, khoảng
+              <u>19°15′B, 106°10′Đ</u>
+            </li>
+            <li>
+              Điểm cực Tây: xã Quế Phong, huyện Quế Phong, khoảng
+              <u>19°25′B, 103°55′Đ</u>
+            </li>
+          </ul>
+          <p>
+            Lưu ý: Các điểm cực hiện chưa được công bố tọa độ chính thức; các số
+            liệu trên chỉ mang tính ước lượng, dựa trên bản đồ hành chính tỉnh
+            Lào Cai sau sáp nhập (2025) và dữ liệu bản đồ số.
+          </p>
+          <p><strong>Tiếp giáp:</strong></p>
+          <ul>
+            <li>Phía đông giáp Vịnh Bắc Bộ</li>
+            <li>
+              Phía tây giáp tỉnh Hủa Phăn, Xiêng Khoảng và tỉnh Bolikhamsai, Lào
+            </li>
+            <li>Phía nam giáp tỉnh Hà Tĩnh</li>
+            <li>Phía bắc giáp tỉnh Thanh Hóa.</li>
+          </ul>
+          <p style="font-size: 15px">
+            Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Ngh%E1%BB%87_An"
+              target="_blank"
+              >Wikipedia – Nghệ An</a
+            >
+          </p>
+        </article>
+        <figure class="w3-center">
+          <img
+            src="https://bandothegioikholon.com/wp-content/uploads/2025/07/ban-do-tinh-Nghe-An-moi-nhat-768x563.jpg"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Hải Phòng"
+            style="width: 75%"
+          />
+          <span class="text-overlay"></span>
+          <figcaption style="font-size: 15px">
+            Nguồn hình ảnh:
+            <a
+              href="https://bandothegioikholon.com/Ban-Do-Kho-Lon-Gia-Re/ban-do-hanh-chinh-va-cac-tinh/ban-do-tinh-nghe-an-moi-nhat-sau-sap-nhap//"
+              target="_blank"
+              >bandothegioikholon.com</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section
+        class="w3-row-padding w3-padding-16 w3-content"
+        id="DIEUKIENTUNHIEN"
+      >
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        </header>
+        <article>
+          <p>
+            <mark><strong>Vị trí địa lí</strong></mark
+            ><br />
+            Nghệ An nằm ở trung tâm khu vực Bắc Trung Bộ, là tỉnh có diện tích
+            lớn nhất cả nước, với diện tích <u>16.490,25 km²</u>. Tỉnh có đầy đủ
+            các loại hình giao thông gồm đường bộ, đường sắt, đường biển, đường
+            hàng không và đường thủy nội địa, tạo điều kiện thuận lợi cho phát
+            triển kinh tế – xã hội.
+          </p>
+
+          <p>
+            <mark><strong>Địa hình</strong></mark
+            ><br />
+            Địa hình Nghệ An nằm ở phía Đông Bắc dãy Trường Sơn, có xu hướng
+            thấp dần từ Tây Bắc xuống Đông Nam. Địa hình được chia thành ba vùng
+            sinh thái rõ rệt: miền núi, trung du và đồng bằng ven biển. Trong
+            đó, miền núi chiếm khoảng <u>3/4</u> diện tích tự nhiên, còn đồng
+            bằng ven biển chỉ chiếm khoảng <u>17%</u>.
+          </p>
+
+          <p>
+            <mark><strong>Tài nguyên đất</strong></mark
+            ><br />
+            Tài nguyên đất đa dạng theo từng vùng địa hình. Đồng bằng ven biển
+            có đất phù sa và đất cát thích hợp trồng lúa và hoa màu. Vùng trung
+            du và miền núi có đất đỏ bazan, đất feralit thuận lợi cho trồng cây
+            công nghiệp và cây lâu năm. Đất nông nghiệp chiếm khoảng
+            <u>11,9%</u>, đất lâm nghiệp chiếm <u>41,8%</u> diện tích tự nhiên.
+          </p>
+
+          <p>
+            <mark><strong>Tài nguyên rừng</strong></mark
+            ><br />
+            Nghệ An có diện tích rừng lớn trên <u>685.000 ha</u>, gồm rừng phòng
+            hộ, rừng đặc dụng và rừng kinh tế. Rừng có hệ sinh thái phong phú
+            với nhiều loài động, thực vật quý hiếm, đồng thời có giá trị lớn về
+            kinh tế, môi trường và du lịch sinh thái như Vườn quốc gia Pù Mát.
+          </p>
+
+          <p>
+            <mark><strong>Tài nguyên biển</strong></mark
+            ><br />
+            Nghệ An có đường bờ biển dài khoảng <u>82 km</u>, vùng biển rộng
+            <u>4.230</u> hải lý vuông, giàu tài nguyên hải sản. Cửa Lò là cảng
+            biển quan trọng của khu vực Bắc Trung Bộ, đồng thời là trung tâm du
+            lịch biển nổi tiếng với nhiều bãi tắm đẹp.
+          </p>
+
+          <p>
+            <mark><strong>Tài nguyên khoáng sản</strong></mark
+            ><br />
+            Khoáng sản của Nghệ An phong phú với nhiều loại có giá trị như đá
+            vôi, đá bazan, thiếc, vàng và nước khoáng. Trong đó, đá vôi có trữ
+            lượng trên <u>1 tỷ m³</u>, đá bazan khoảng <u>360 triệu m³</u>, tạo
+            điều kiện thuận lợi cho phát triển công nghiệp khai khoáng và vật
+            liệu xây dựng.
+          </p>
+
+          <p>
+            Theo dữ liệu Sáp nhập tỉnh, thành Việt Nam 2025, Nghệ An có diện
+            tích: 16.487 km², xếp thứ 4
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a
+            href="https://quychau.nghean.gov.vn/dieu-kien-tu-nhien/dieu-kien-tu-nhien-495586?pageindex=0"
+            >quychau.nghean.gov.vn</a
+          >
+          <br /><a
+            href="https://suadiennuoctaivinh.com/dieu-kien-tu-nhien-cua-nghe-an/#2_Dia_hinh"
+            >suadiennuoctaivinh.com</a
+          >
+          )
+        </p>
+      </section>
+      <hr />
+
+      <section
+        class="w3-container w3-padding-16 table-responsive w3-content"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <header>
+          <h1 style="font-size: 50px">KHÍ HẬU</h1>
+          <br />
+        </header>
+        <article>
+          <p>
+            <mark><strong>Đặc điểm chung</strong></mark
+            ><br />
+            Nghệ An nằm trong vùng khí hậu nhiệt đới ẩm gió mùa, có
+            <u>4 mùa</u> rõ rệt: xuân, hạ, thu, đông. Khí hậu phân hóa theo mùa
+            và theo vùng lãnh thổ, mang tính khắc nghiệt, ảnh hưởng lớn đến sản
+            xuất nông nghiệp và đời sống dân cư.
+          </p>
+
+          <p>
+            <mark><strong>Khí hậu Nghĩa Đàn</strong></mark
+            ><br />
+            Khí hậu Nghĩa Đàn mang đặc trưng của vùng Thanh – Nghệ – Tĩnh, đồng
+            thời chịu ảnh hưởng của khu vực trung du đồi núi á nhiệt đới. Thời
+            tiết dung hòa giữa không khí vùng đồng bằng ven biển Nghệ An và gió
+            nóng từ Lào, với hai mùa chính là mùa hè nóng và mùa đông lạnh; mùa
+            xuân và thu là thời kỳ chuyển tiếp.
+          </p>
+
+          <p>
+            <mark><strong>Nhiệt độ và nắng</strong></mark
+            ><br />
+            Nhiệt độ trung bình năm của Nghệ An dao động từ <u>24–25°C</u>.
+            Tháng nóng nhất có nhiệt độ trung bình <u>30–31°C</u>, cực đại lên
+            tới <u>44°C</u>; tháng lạnh nhất trung bình <u>18–19°C</u>, có nơi
+            xuống dưới <u>0°C</u>. Số giờ nắng đạt khoảng
+            <u>1.500–1.700 giờ/năm</u>.
+          </p>
+
+          <p>
+            <mark><strong>Lượng mưa</strong></mark
+            ><br />
+            Lượng mưa trung bình năm của Nghệ An khoảng <u>1.670 mm</u>, tập
+            trung chủ yếu từ tháng 8 đến tháng 10. Riêng Nghĩa Đàn, năm mưa
+            nhiều có thể đạt <u>2.610 mm</u>, năm mưa ít chỉ khoảng
+            <u>850 mm</u>. Mùa khô kéo dài từ tháng 11 đến tháng 4 năm sau.
+          </p>
+
+          <p>
+            <mark><strong>Chế độ gió</strong></mark
+            ><br />
+            Khí hậu Nghệ An chịu ảnh hưởng chủ yếu của hai loại gió: gió Phơn
+            Tây Nam và gió mùa Đông Bắc. Gió Phơn Tây Nam thường xuất hiện từ
+            tháng 4 đến tháng 9, gây khô nóng, hạn hán; gió mùa Đông Bắc xuất
+            hiện từ tháng 10 đến tháng 4 năm sau, gây rét đậm, rét hại.
+          </p>
+
+          <p>
+            <mark><strong>Độ ẩm và thiên tai</strong></mark
+            ><br />
+            Độ ẩm không khí trung bình năm đạt <u>86–87%</u>, nhưng giảm mạnh
+            trong mùa khô, có lúc xuống <u>30–40%</u> ở Nghĩa Đàn. Mỗi năm Nghệ
+            An chịu ảnh hưởng khoảng <u>2–3</u> cơn bão và áp thấp nhiệt đới,
+            thường gây mưa lớn, lũ lụt và sạt lở đất.
+          </p>
+        </article>
+
+        <table
+          style="
+            width: 100%;
+            border-color: rgb(162, 169, 177);
+            background-color: rgb(234, 236, 240);
+          "
+        >
+          <tbody>
+            <tr>
+              <th colspan="14">Dữ liệu khí hậu của Nghệ An</th>
+            </tr>
+            <tr>
+              <th scope="row">Tháng</th>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+              <th scope="col">4</th>
+              <th scope="col">5</th>
+              <th scope="col">6</th>
+              <th scope="col">7</th>
+              <th scope="col">8</th>
+              <th scope="col">9</th>
+              <th scope="col">10</th>
+              <th scope="col">11</th>
+              <th scope="col">12</th>
+              <th>Năm</th>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Kỷ lục cao °C (°F)</th>
+              <td style="background: #ffb3b3">32<br />(90)</td>
+              <td style="background: #ff9999">34<br />(93)</td>
+              <td style="background: #ff8080">37<br />(99)</td>
+              <td style="background: #ff6666">39<br />(102)</td>
+              <td style="background: #ff4d4d">41<br />(106)</td>
+              <td style="background: #ff3333">43<br />(109)</td>
+              <td style="background: #ff1a1a">44<br />(111)</td>
+              <td style="background: #ff3333">43<br />(109)</td>
+              <td style="background: #ff6666">40<br />(104)</td>
+              <td style="background: #ff8080">38<br />(100)</td>
+              <td style="background: #ff9999">35<br />(95)</td>
+              <td style="background: #ffb3b3">33<br />(91)</td>
+              <td style="background: #ed0000; color: white">44<br />(111)</td>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Trung bình ngày tối đa °C (°F)</th>
+              <td style="background: #ffe0b3">22<br />(72)</td>
+              <td style="background: #ffe6b3">24<br />(75)</td>
+              <td style="background: #ffecb3">27<br />(81)</td>
+              <td style="background: #fff2b3">31<br />(88)</td>
+              <td style="background: #fff7b3">33<br />(91)</td>
+              <td style="background: #fffbb3">34<br />(93)</td>
+              <td style="background: #fffbb3">34<br />(93)</td>
+              <td style="background: #fff7b3">33<br />(91)</td>
+              <td style="background: #fff2b3">31<br />(88)</td>
+              <td style="background: #ffecb3">29<br />(84)</td>
+              <td style="background: #ffe6b3">26<br />(79)</td>
+              <td style="background: #ffe0b3">23<br />(73)</td>
+              <td style="background: #ffd4a3">29.7<br />(85)</td>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Trung bình ngày °C (°F)</th>
+              <td style="background: #ffe6cc">18<br />(64)</td>
+              <td style="background: #ffedcc">19<br />(66)</td>
+              <td style="background: #fff3cc">22<br />(72)</td>
+              <td style="background: #fff9cc">26<br />(79)</td>
+              <td style="background: #ffffcc">28<br />(82)</td>
+              <td style="background: #ffffb3">30<br />(86)</td>
+              <td style="background: #ffffb3">30<br />(86)</td>
+              <td style="background: #ffffb3">29<br />(84)</td>
+              <td style="background: #ffffcc">27<br />(81)</td>
+              <td style="background: #fff9cc">25<br />(77)</td>
+              <td style="background: #fff3cc">22<br />(72)</td>
+              <td style="background: #ffeccc">19<br />(66)</td>
+              <td style="background: #ffd4a3">24.5<br />(76)</td>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Tối thiểu trung bình ngày °C (°F)</th>
+              <td style="background: #fff0d9">14<br />(57)</td>
+              <td style="background: #fff3d9">15<br />(59)</td>
+              <td style="background: #fff7d9">18<br />(64)</td>
+              <td style="background: #fffccc">22<br />(72)</td>
+              <td style="background: #ffffcc">24<br />(75)</td>
+              <td style="background: #ffffcc">26<br />(79)</td>
+              <td style="background: #ffffcc">26<br />(79)</td>
+              <td style="background: #ffffcc">25<br />(77)</td>
+              <td style="background: #ffffcc">23<br />(73)</td>
+              <td style="background: #fff7cc">21<br />(70)</td>
+              <td style="background: #fff3cc">18<br />(64)</td>
+              <td style="background: #ffead0">15<br />(59)</td>
+              <td style="background: #ffd4a3">20.5<br />(69)</td>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Kỷ lục thấp °C (°F)</th>
+              <td style="background: #cce5ff">5<br />(41)</td>
+              <td style="background: #cce5ff">7<br />(45)</td>
+              <td style="background: #99ccff">10<br />(50)</td>
+              <td style="background: #66b2ff">15<br />(59)</td>
+              <td style="background: #3399ff">18<br />(64)</td>
+              <td style="background: #3399ff">21<br />(70)</td>
+              <td style="background: #3399ff">22<br />(72)</td>
+              <td style="background: #3399ff">22<br />(72)</td>
+              <td style="background: #66b2ff">19<br />(66)</td>
+              <td style="background: #99ccff">16<br />(61)</td>
+              <td style="background: #cce5ff">10<br />(50)</td>
+              <td style="background: #cce5ff">6<br />(43)</td>
+              <td style="background: #cce5ff">5<br />(41)</td>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Lượng mưa trung bình mm (inches)</th>
+              <td style="background: #e0ffe0">40<br />(1.57)</td>
+              <td style="background: #d4ffd4">30<br />(1.18)</td>
+              <td style="background: #bfffbc">60<br />(2.36)</td>
+              <td style="background: #99ff99">90<br />(3.54)</td>
+              <td style="background: #66ff66">130<br />(5.12)</td>
+              <td style="background: #33cc33; color: white">150<br />(5.91)</td>
+              <td style="background: #33cc33; color: white">160<br />(6.30)</td>
+              <td style="background: #009900; color: white">250<br />(9.84)</td>
+              <td style="background: #006600; color: white">
+                420<br />(16.54)
+              </td>
+              <td style="background: #006600; color: white">
+                500<br />(19.69)
+              </td>
+              <td style="background: #339933; color: white">
+                300<br />(11.81)
+              </td>
+              <td style="background: #99ff99">120<br />(4.72)</td>
+              <td style="background: #004c00; color: white">
+                2250<br />(88.58)
+              </td>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Số ngày mưa trung bình</th>
+              <td style="background: #b3b3ff">8</td>
+              <td style="background: #b3b3ff">7</td>
+              <td style="background: #9999ff">9</td>
+              <td style="background: #8080ff">11</td>
+              <td style="background: #6666ff">14</td>
+              <td style="background: #4d4dff">15</td>
+              <td style="background: #4d4dff">16</td>
+              <td style="background: #3333ff">18</td>
+              <td style="background: #3333ff">20</td>
+              <td style="background: #4d4dff">18</td>
+              <td style="background: #6666ff">14</td>
+              <td style="background: #8080ff">10</td>
+              <td style="background: #0000ff; color: white">158</td>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Độ ẩm trung bình (%)</th>
+              <td style="background: #99ccff">86</td>
+              <td style="background: #99ccff">87</td>
+              <td style="background: #80bfff">86</td>
+              <td style="background: #66b2ff">84</td>
+              <td style="background: #3399ff">82</td>
+              <td style="background: #007fff; color: white">80</td>
+              <td style="background: #007fff; color: white">79</td>
+              <td style="background: #3399ff">83</td>
+              <td style="background: #007fff; color: white">88</td>
+              <td style="background: #0066cc; color: white">90</td>
+              <td style="background: #3399ff">89</td>
+              <td style="background: #66b2ff">88</td>
+              <td style="background: #007fff; color: white">86</td>
+            </tr>
+
+            <tr style="text-align: center">
+              <th>Số giờ nắng trung bình tháng</th>
+              <td style="background: #cccccc">90</td>
+              <td style="background: #bbbbbb">100</td>
+              <td style="background: #aaaaaa">140</td>
+              <td style="background: #999900">170</td>
+              <td style="background: #dddd00">200</td>
+              <td style="background: #d6d600">210</td>
+              <td style="background: #cccc00">220</td>
+              <td style="background: #cfcf00">200</td>
+              <td style="background: #d2d200">160</td>
+              <td style="background: #cbcb00">140</td>
+              <td style="background: #c0c024">110</td>
+              <td style="background: #b8b855">90</td>
+              <td style="background: #999900">1830</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Huyện Hưng Nguyên",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/hung-nguyen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nghi Lộc",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/nghi-loc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thanh Chương",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/thanh-chuong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nghi Lộc",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/nghi-loc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Đô Lương",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/do-luong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Yên Thành",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/yen-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Diễn Châu",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/dien-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Anh Sơn",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/anh-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Tân Kỳ",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/tan-ky?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Con Cuông",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/con-cuong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Quỳnh Lưu",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/quynh-luu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Quỳ Hợp",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/quy-hop?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nghĩa Đàn",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/nghia-dan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Tương Dương",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/tuong-duong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Kỳ Sơn",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/ky-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Quỳ Châu",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/quy-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Quế Phong",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/que-phong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Hoàng Mai",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/hoang-mai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Thái Hoà",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/thai-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Vinh",
+              parent: "Tỉnh Nghệ An cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/nghe-an/vinh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="contact">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        </header>
+        <article>
+          <figure style="overflow-x: auto">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #999;
+              "
+            >
+              <tr style="background: #f0f0f0">
+                <th>Năm</th>
+                <th>Dân số</th>
+                <th>±%</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>1995</td>
+                  <td>2.714.900</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>1996</td>
+                  <td>2.752.800</td>
+                  <td>+1,4%</td>
+                </tr>
+                <tr>
+                  <td>1997</td>
+                  <td>2.791.300</td>
+                  <td>+1,4%</td>
+                </tr>
+                <tr>
+                  <td>1998</td>
+                  <td>2.829.400</td>
+                  <td>+1,4%</td>
+                </tr>
+                <tr>
+                  <td>1999</td>
+                  <td>2.865.200</td>
+                  <td>+1,3%</td>
+                </tr>
+                <tr>
+                  <td>2000</td>
+                  <td>2.871.100</td>
+                  <td>+0,2%</td>
+                </tr>
+                <tr>
+                  <td>2001</td>
+                  <td>2.877.000</td>
+                  <td>+0,2%</td>
+                </tr>
+                <tr>
+                  <td>2002</td>
+                  <td>2.881.600</td>
+                  <td>+0,2%</td>
+                </tr>
+                <tr>
+                  <td>2003</td>
+                  <td>2.884.900</td>
+                  <td>+0,1%</td>
+                </tr>
+                <tr>
+                  <td>2004</td>
+                  <td>2.890.000</td>
+                  <td>+0,2%</td>
+                </tr>
+                <tr>
+                  <td>2005</td>
+                  <td>2.895.600</td>
+                  <td>+0,2%</td>
+                </tr>
+                <tr>
+                  <td>2006</td>
+                  <td>2.900.100</td>
+                  <td>+0,2%</td>
+                </tr>
+                <tr>
+                  <td>2007</td>
+                  <td>2.905.200</td>
+                  <td>+0,2%</td>
+                </tr>
+                <tr>
+                  <td>2008</td>
+                  <td>2.912.100</td>
+                  <td>+0,2%</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>2.914.500</td>
+                  <td>+0,1%</td>
+                </tr>
+                <tr>
+                  <td>2010</td>
+                  <td>2.954.700</td>
+                  <td>+1,4%</td>
+                </tr>
+                <tr>
+                  <td>2011</td>
+                  <td>2.955.900</td>
+                  <td>+0,0%</td>
+                </tr>
+                <tr>
+                  <td>2012</td>
+                  <td>2.983.300</td>
+                  <td>+0,9%</td>
+                </tr>
+                <tr>
+                  <td>2013</td>
+                  <td>3.011.300</td>
+                  <td>+0,9%</td>
+                </tr>
+                <tr>
+                  <td>2014</td>
+                  <td>3.037.400</td>
+                  <td>+0,9%</td>
+                </tr>
+                <tr>
+                  <td>2015</td>
+                  <td>3.063.900</td>
+                  <td>+0,9%</td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>3.105.500</td>
+                  <td>+1,4%</td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td>3.131.300</td>
+                  <td>+0,8%</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>3.157.100</td>
+                  <td>+0,8%</td>
+                </tr>
+                <tr>
+                  <td>2019</td>
+                  <td>3.337.200</td>
+                  <td>+5,7%</td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td>3.365.200</td>
+                  <td>+0,8%</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>3.409.810</td>
+                  <td>+1,3%</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>3.419.990</td>
+                  <td>+0,3%</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>3.442.000</td>
+                  <td>+0,7%</td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>3.470.988</td>
+                  <td>+0,8%</td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p>
+            <strong
+              >Tình hình tôn giáo trong tỉnh tính đến ngày 1 tháng 4 năm
+              2019</strong
+            >, toàn tỉnh có <strong><mark>11</mark></strong> tôn giáo khác nhau
+            đạt <strong><mark>287.232</mark></strong> người, nhiều nhất là Công
+            giáo có <strong><mark>287.064</mark></strong> người, tiếp theo là
+            Phật giáo có <strong><mark>1.079</mark></strong> người. Còn lại các
+            tôn giáo khác như đạo Tin Lành có
+            <strong><mark>58</mark></strong> người, Hồi giáo có
+            <strong><mark>12</mark></strong> người, Minh Lý đạo có
+            <strong><mark>5</mark></strong> người, Phật giáo Hòa Hảo, đạo Cao
+            Đài, Tịnh độ cư sĩ Phật hội Việt Nam mỗi tôn giáo có
+            <strong><mark>3</mark></strong> người, Minh Sư đạo, Baha'i giáo mỗi
+            tôn giáo có <strong><mark>2</mark></strong> người và
+            <strong><mark>1</mark></strong> người theo Tứ Ân Hiếu Nghĩa.
+          </p>
+          <p style="font-size: 15px">
+            (Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Ngh%E1%BB%87_An"
+              target="_blank"
+              >Wikipedia – Nghệ An</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="VANHOA">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        </header>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+          <p>
+            Văn hóa Nghệ An đậm đà bản sắc miền Trung, hội tụ truyền thống lịch
+            sử lâu đời, văn học – nghệ thuật phong phú và các giá trị dân gian
+            đặc sắc.
+          </p>
+
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Nghệ An:</strong>
+            </summary>
+            <ol type="1">
+              <li>
+                <mark><strong>Lễ hội đền Cờn </strong></mark>
+                <p>
+                  Thời gian: <u>Từ 15 tháng Chạp đến hết tháng Giêng âm lịch</u>
+                </p>
+                <p>Địa điểm: <u>phường Quỳnh Mai, Nghệ An</u></p>
+                <p>
+                  Lễ hội đền Cờn Nghệ An là một trong những hoạt động nhằm tưởng
+                  nhớ đức Thánh Mẫu và tứ vị Thánh Nương – những người đã phù
+                  hộ, bảo vệ cho người dân vượt qua hiểm nguy, làm ăn thịnh
+                  vượng. Theo truyền thuyết, chính những vị thần này cũng đã
+                  nhiều lần giúp đỡ quân nhà Lê, nhà Trần vượt biển thành công.
+                  Trong khuôn khổ lễ hội sẽ tổ chức nhiều nghi lễ, tín ngưỡng
+                  văn hóa, kèm theo đó là nhiều hoạt động trò chơi dân gian như:
+                  đua thuyền, kéo co, chọi gà, đánh cờ người…
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-1_1638926731.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội đền Cuông Nghệ An</strong></mark>
+                <p>Thời gian: <u>Từ ngày 12 – 16 tháng 2 âm lịch</u></p>
+                <p>Địa điểm: <u>xã An Châu, Nghệ An</u></p>
+                <p>
+                  Một trong những lễ hội ở Nghệ An thu hút đông đảo khách du
+                  lịch và người dân địa phương tham gia đó chính là lễ hội đền
+                  Cuông. Đây là dịp để người dân cầu tài lộc, đồng thời bày tỏ
+                  sự thành kính, ghi nhớ đến huyền thoại An Dương Vương đưa công
+                  chúa Mỵ Châu chạy trốn khỏi kẻ thù.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-2_1638926775.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lệ hội Hang Bua </strong></mark>
+                <p>
+                  Thời gian:
+                  <u> Từ ngày 17 đến ngày 19 tháng Giêng âm lịch hằng năm</u>
+                </p>
+                <p>Địa điểm: <u>bản Na Nhàng, xã Châu Hồng, Nghệ An</u></p>
+                <p>
+                  Lễ hội Hang Bua là một trong các lễ hội truyền thống ở Nghệ An
+                  gắn liền với nhiều nét văn hóa tâm linh, đời sống sinh hoạt
+                  của người dân đồng bào Thái cổ. Phần lễ thương được tổ chức
+                  khá đơn giản, chỉ bao gồm diễn văn khai mạc và lễ cúng thần
+                  linh. Điểm đặc sắc của lễ hội này đó chính là phần hội được tổ
+                  chức rất sinh động, bao gồm nhiều loại hình nghệ thuật dân
+                  gian và hiện đại.
+                </p>
+                <p>
+                  Du khách đến đây sẽ vô cùng thích thú với âm thanh của tiếng
+                  cồng chiêng cũng như sự rộn ràng, đông vui từ những điệu múa,
+                  tiếng sáo,… Đây cũng là một trong những lễ hội ở Nghệ An thu
+                  hút khách du lịch vào dịp đầu xuân năm mới.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-3_1638926807.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội đền Quả Sơn</strong></mark>
+                <p>
+                  Thời gian:
+                  <u>Từ ngày 19 đến ngày 21 tháng Giêng âm lịch hằng năm</u>
+                </p>
+                <p>Địa điểm: <u>xã Bạch Ngọc, Nghệ An</u></p>
+                <p>
+                  Nếu bạn đang tìm hiểu về một trong các lễ hội ở Nghệ An lớn
+                  nhất thì có thể tham khảo thông tin về lễ hội đền Quả Sơn. Đây
+                  là lễ hội được tổ chức nhằm tưởng nhớ đến công đức của vị danh
+                  tướng Uy Minh Vương Lý Nhật Quang – người đã có nhiều công lao
+                  trong việc củng cố nền độc lập, bảo quốc an dân ở thế kỷ XI.
+                </p>
+                <p>
+                  Tương tự như nhiều lễ hội khác ở Nghệ An, lễ hội Quả Sơn sẽ
+                  được tổ chức với phần lễ và phần hội. Đặc sắc nhất trong khuôn
+                  khổ lễ hội này là hoạt động đua thuyền dọc sông Lam và nhiều
+                  hoạt động văn hóa, nghệ thuật mang đậm nét truyền thống của
+                  người dân xứ Nghệ.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-4_1638926840.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội đền Bạch Mã</strong></mark>
+                <p>
+                  Thời gian: <u>Từ ngày mồng 9 đến ngày 10 tháng 2 âm lịch</u>
+                </p>
+                <p>Địa điểm: <u> huyện Thanh Chương cũ, tỉnh Nghệ An</u></p>
+                <p>
+                  Đền Bạch Mã Nghệ An là một trong 4 ngôi đền linh thiêng bậc
+                  nhất. Nơi đây thờ vị anh hùng Phan Đà, người đã có nhiều đóng
+                  góp trong việc đánh đuổi giặc ngoại xâm cùng nghĩa quân Lê
+                  Lợi. Theo truyền thuyết, vị anh hùng này cũng đã nhiều lần
+                  giúp người dân tai qua nạn khỏi, thoát khỏi dịch bệnh, đánh
+                  thắng kẻ thù. Vì vậy, hằng năm, lễ hội đền Bạch Mã được tổ
+                  chức vừa ghi nhớ công ơn của vị anh hùng này, vừa tổ chức các
+                  hoạt động văn hóa văn nghệ, gắn kết tình cảm của người dân.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-5_1638926886.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Hội Vật Cù Thanh Chương</strong></mark>
+                <p>
+                  Thời gian:
+                  <u
+                    >Được tổ chức vào dịp Tết Nguyên Đán, thường bắt đầu từ mồng
+                    Hai, mồng Ba đến hết mồng Bảy tháng Giêng</u
+                  >
+                </p>
+                <p>Địa điểm: <u>huyện Thanh Chương cũ, tỉnh Nghệ An</u></p>
+                <p>
+                  Lễ hội Vật Cù Thanh Chương là một trong các lễ hội truyền
+                  thống ở Nghệ An. Vào những ngày đầu xuân năm mới, khi nghe âm
+                  thanh của tiếng trống hội, người dân xứ Nghệ lại nô nức rủ
+                  nhau đi xem hội vật. Lễ hội này đã có từ rất lâu đời, ban đầu
+                  mục đích tuyển chọn những lực sĩ khỏe mạnh để đầu quân cho
+                  tướng Phan Đàn.
+                </p>
+                <p>
+                  Ngày nay, lễ hội được tổ chức nhằm giúp cho người dân tham gia
+                  rèn luyện sức khỏe, giữ gìn nét văn hóa truyền thống của địa
+                  phương. Trò vật cù thường được tổ chức trên một khoảng sân
+                  lớn, những thanh niên trai tráng sẽ được chia làm 2 bên, cởi
+                  trần, đóng khố. Có 3 hình thức chơi phổ biến đó là cù gôn, cù
+                  đẩy và cù nước.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-6_1638927084.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội du lịch Cửa Lò</strong></mark>
+                <p>Thời gian: <u>Ngày 30/4 và 1/5 dương lịch hằng năm</u></p>
+                <p>Địa điểm: <u>Cửa Lò, Nghệ An</u></p>
+                <p>
+                  Nếu có dịp du lịch Cửa Lò Nghệ An vào ngày 30/4 hoặc 1/5, du
+                  khách nhất định không thể bỏ lỡ lễ hội du lịch vô cùng độc đáo
+                  tại đây. Đây là hoạt động mở đầu cho mùa du lịch biển tại Cửa
+                  Lò nên thu hút rất đông khách du lịch và người dân địa phương
+                  tham gia. Phần lễ thường được tổ chức bao gồm lễ khai quang,
+                  lễ yết cáo… Phần hội sẽ bao gồm các hoạt động văn nghệ, thể
+                  thao.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-7_1638927115.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội đền Hoàng Mười</strong></mark>
+                <p>
+                  Thời gian: <u> Mồng 9 – mồng 10 tháng 10 âm lịch hằng năm</u>
+                </p>
+                <p>Địa điểm: <u>huyện Hưng Nguyên cũ, Nghệ An</u></p>
+                <p>
+                  Lễ hội đền Ông Hoàng Mười Nghệ An được hình thành từ thế kỷ
+                  XVII, đây là lễ hội ở Nghệ An nổi tiếng, được tổ chức nhằm
+                  tưởng nhớ đến công đức của quan Hoàng Mười. Quy mô của lễ hội
+                  rất lớn với các nghi lễ như: lễ rước, lễ yết cáo, lễ đại tế,
+                  lễ rước sắc. Lễ hội này thu hút đông đảo du khách, kèm theo đó
+                  là khoảng 400 – 500 nhóm đến hoạt động tín ngưỡng. Lễ hội
+                  không chỉ giúp người dân gắn kết mà còn là thời điểm để bày tỏ
+                  những ước muốn, khát vọng của mình với thần linh.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-8_1638927207.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội đền Chín Gian</strong></mark>
+                <p>Thời gian: <u>Từ ngày 13 – 15 tháng 2 âm lịch</u></p>
+                <p>
+                  Địa điểm:
+                  <u>Đền Chín Gian, thuộc địa phận xã Quế Phong, Nghệ An</u>
+                </p>
+                <p>
+                  Lễ hội đền Chín Gian là một trong những tín ngưỡng tâm linh
+                  độc đáo của đồng bào người Thái vùng Phủ Quỳ, Nghệ An. Điểm
+                  độc đáo của lễ hội này là hoạt động hiến trâu. Người dân sẽ
+                  đưa một con trâu cái trắng, được xem là vật lễ cúng tế linh
+                  thiêng nhất. Sau khi trâu được đưa xuống tắm ở bến Quan sẽ
+                  tiến hành nghi lễ chém trâu, sau đó thịt trâu sẽ được đặt ở
+                  bậc sạp cao nhất trong đền. Sau khi bà mo làm lễ nạp trâu 3
+                  ngày 3 đêm thì phần thịt sẽ được đem chia ra, nấu lên cho dân
+                  làng cùng thưởng thức.
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-9_1638927234.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội đền Vua Mai</strong></mark>
+                <p>Thời gian: <u>Rằm tháng Giêng âm lịch</u></p>
+                <p>
+                  Địa điểm: <u>đền Vua Mai, huyện Nam Đàn cũ, tỉnh Nghệ An</u>
+                </p>
+                <p>
+                  Lễ hội đền Vua Mai là một trong những lễ hội ở Nghệ An được tổ
+                  chức và dịp đầu năm, mở đầu cho các lễ hội khác tại Nghệ An.
+                  Tại đây, du khách sẽ được khám phá những bản sắc văn hóa độc
+                  đáo của người dân địa phương. Tham gia vào các hoạt động trong
+                  khuôn khổ lễ hội như: lễ rước nước, lễ yết cáo, lễ dâng hương…
+                  Bên cạnh đó, lễ hội đền Vua Mai còn có thêm nhiều hoạt động
+                  trò chơi hấp dẫn như: đu tiên, chọi gà, kéo co, hội vật…
+                </p>
+                <figure>
+                  <img
+                    src="https://statics.vinpearl.com/le-hoi-o-nghe-an-010_1640521658.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinpearl.com/vi/le-hoi-o-nghe-an-diem-danh-10-le-hoi-doc-dao-nhat-xu-nghe"
+                      target="_blank"
+                      >vinpearl.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DITICH">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">
+            DI TÍCH, DI SẢN VĂN HOÁ
+          </h1>
+        </header>
+        <article>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích lịch sử:
+            </summary>
+            <ol type="1">
+              <li>
+                Khu Di tích Kim Liên<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/8Y4B71uwUZXkSTNX7"
+                  target="_blank"
+                  >MHG9+H78, Hoàng Trù, Nam Đàn, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/khu-di-tich-kim-lien-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích lịch sử Truông Bồn<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/FMXvrtrYy3XC5msEA"
+                  target="_blank"
+                  >QL15, Mỹ Sơn, Đô Lương, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - cách mạng. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/di-tich-lich-su-truong-bon-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Thành cổ Vinh<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/tQmtSWkMRiYgnRQz8"
+                  target="_blank"
+                  >Đào Tấn, Cửa Nam, Vinh, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - kiến trúc. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/thanh-co-vinh-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Cuông<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/RGEFuKEWVDv2f5KVA"
+                  target="_blank"
+                  >Núi Mộ Dạ, Diễn Châu, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/den-cuong-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Quả Sơn<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/Y5GUJzdhjVUeJag7A"
+                  target="_blank"
+                  >W7PJ+65J, Bồi Sơn, Đô Lương, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/den-qua-son-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Đông Hải<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/jejdNowmgWJbsFyAA"
+                  target="_blank"
+                  >PPGM+VVR, xóm 2, Vinh, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/den-dong-hai-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đình Mõ<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/AxpdR2kqxhb69rkL9"
+                  target="_blank"
+                  >2FRG+F6M, Hậu Thành, Yên Thành, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/dinh-mo-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích lưu niệm cụ Phan Bội Châu<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/8vnLfAQzYMgoLnsu5"
+                  target="_blank"
+                  >MGW2+3HF, Nam Đàn, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/di-tich-luu-niem-cu-phan-boi-chau-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Bảo tàng Xô Viết Nghệ Tĩnh<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/xRyhih2L95Eo44Kj8"
+                  target="_blank"
+                  >10 Đào Tấn, Cửa Nam, Vinh, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - cách mạng. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/bao-tang-xo-viet-nghe-tinh-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Cột mốc số 0 – đường Hồ Chí Minh – Di tích lịch sử Nghệ An<br />-Địa
+                điểm:<a
+                  href="https://maps.app.goo.gl/4LJj4uA85aLpPDzW9"
+                  target="_blank"
+                  >27V9+RGX, Ho Chi Minh Highway, Tân Kỳ, Nghệ An, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - cách mạng. <br />
+                <figure>
+                  <img
+                    src="https://ngheantoplist.net/wp-content/uploads/2024/03/cot-moc-so-0-duong-ho-chi-minh-di-tich-lich-su-nghe-an-ngheantoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ngheantoplist.net/du-lich/top-10-di-tich-lich-su-nghe-an-nen-kham-pha-trai-nghiem"
+                      target="_blank"
+                      >ngheantoplist.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol type="1">
+              <li>
+                -Ca trù<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://truyenhinhnghean.vn/file/4028eaa46735a26101673a4df345003c/022024/giang1_20240216172639.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://truyenhinhnghean.vn/dat-va-nguoi-xu-nghe/202402/phat-huy-di-san-ca-tru-ngay-xuan-o-dien-chau-7351a3d/"
+                      target="_blank"
+                      >truyenhinhnghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Dân ca Ví, Giặm Nghệ Tĩnh <br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://bna.1cdn.vn/2024/01/09/uploaded-minhquanbna-2023_08_04-_bieu-dien-dan-ca-vi-giam-tai-le-hoi-duong-pho-que-huong-mua-sen-no-trong-khuon-kho-le-hoi-lang-sen-nam-2023-3036.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baonghean.vn/ve-nguon-goc-dan-ca-vi-giam-nghe-tinh-10266557.html"
+                      target="_blank"
+                      >baonghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ Xăng Khan (Kin chiêng boóc mạy) của người Thái<br />
+                - Loại hình: Tập quán xã hội và tín ngưỡng<br />
+                <figure>
+                  <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.TJ2QkwelfP07hE3hViD4kwHaFB?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ketoan.ags-vina.com/2024/12/le-xang-khan-kin-chieng-booc-may-cua.html"
+                      target="_blank"
+                      >ketoan.ags-vina.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Bạch Mã<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://truyenhinhnghean.vn/file/4028eaa46735a26101673a4df345003c/022023/img_20230228_153454_20230228180207.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://truyenhinhnghean.vn/dat-va-nguoi-xu-nghe/202302/thanh-chuong-khai-mac-le-hoi-den-bach-ma-2023-4233225/"
+                      target="_blank"
+                      >truyenhinhnghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Chín Gian<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.frb4NFlbOXGkcOLWVpSHBgHaEy?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://truyenhinhnghean.vn/dat-va-nguoi-xu-nghe/202303/le-hoi-den-chin-gian-nam-2023-97d3585/"
+                      target="_blank"
+                      >truyenhinhnghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Cờn<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.9CjBgAjElZw9RCAP3r0AaAHaE9?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://lehoi.info/nghe-an/le-hoi-den-con-tai-nghe-an-ij"
+                      target="_blank"
+                      >lehoi.info</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền ông Hoàng Mười<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/R.ddb7c190fad5c5154bdae4ad9e4e5e75?rik=lzmBw8TGgFlD5w&pid=ImgRaw&r=0"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://truyenhinhnghean.vn/dat-va-nguoi-xu-nghe/202210/chuan-bi-cac-hoat-dong-le-hoi-den-ong-hoang-muoi-e4b7619/"
+                      target="_blank"
+                      >truyenhinhnghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Nguyễn Cảnh Hoan (thập niên sự lệ)<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://truyenhinhnghean.vn/file/4028eaa46735a26101673a4df345003c/042024/img_2874_20240422094236.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://truyenhinhnghean.vn/dat-va-nguoi-xu-nghe/202404/tong-duyet-chuong-trinh-le-hoi-den-nguyen-canh-hoan-nam-2024-va-cong-bo-di-san-van-hoa-phi-vat-the-quoc-gia-bd91bc6/"
+                      target="_blank"
+                      >truyenhinhnghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Quả Sơn<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.1Jvo1AQEyb4EtKgDYw6U4wHaEf?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="http://vanhoanghean.vn/chi-tiet-tin-tuc/15295-doc-dao-le-hoi-den-qua-son"
+                      target="_blank"
+                      >vanhoanghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Thanh Liệt<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.lLOMPxKE8ri35Aqx_AEuRwHaF8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baonghean.vn/trai-nghiem-van-hoa-song-nuoc-tai-le-hoi-den-thanh-liet-10292474.html"
+                      target="_blank"
+                      >baonghean.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Yên Lương<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://cepcms.vnptvas.vn/upload_images/images/202405/img_vm_762_2405142237367652_1000957.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="http://ngaynaynamxua.vn/khai-mac-le-hoi-du-lich-cua-lo-2024-va-cong-bo-di-san-van-hoa-phi-vat-the-quoc-gia-le-hoi-den-yen-luong-n19537.html"
+                      target="_blank"
+                      >ngaynaynamxua.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="GIAODUC">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        </header>
+        <article>
+          <p>
+            <mark><strong>1. Thành tích nổi bật trong giáo dục</strong></mark
+            ><br />
+            Sau khi sáp nhập Trường Cao đẳng Sư phạm thành Trường Đại học Nghệ
+            An, ngành Giáo dục Nghệ An ghi nhận nhiều thành tích nổi bật trong
+            năm học 2024–2025. Đây là năm đầu tiên triển khai các kỳ thi theo
+            chương trình giáo dục phổ thông 2018 và đổi mới hình thức thi tốt
+            nghiệp THPT. Nhờ sự chỉ đạo sát sao của Sở Giáo dục và Đào tạo, cùng
+            phong trào thi đua “90 ngày quyết tâm đạt kết quả cao”, học sinh
+            Nghệ An lần đầu tiên đạt <u>vị trí top 1 cả nước</u> về điểm trung
+            bình và điểm trung vị, với <u>8 môn học</u> nằm trong tốp 10 toàn
+            quốc.
+          </p>
+
+          <p>
+            <mark><strong>2. Học sinh xuất sắc ở mọi cấp độ</strong></mark
+            ><br />
+            Bên cạnh kết quả đại trà, học sinh Nghệ An tiếp tục khẳng định năng
+            lực mũi nhọn khi mang về <u>7 huy chương quốc tế</u> ở các môn Toán,
+            Vật lý, Hóa học và tiếng Nga, trong đó có
+            <u>4 Huy chương Vàng</u> và <u>3 Huy chương Bạc</u>. Học sinh Trường
+            THPT chuyên Phan Bội Châu cũng giành
+            <u>96 giải học sinh giỏi quốc gia</u>, trong đó có
+            <u>9 giải Nhất</u>. Những kết quả này thể hiện sự phát triển hài hòa
+            giữa giáo dục đại trà và giáo dục mũi nhọn.
+          </p>
+
+          <p>
+            <mark
+              ><strong
+                >3. Đổi mới trong phương pháp và tổ chức giáo dục</strong
+              ></mark
+            ><br />
+            Ngành Giáo dục Nghệ An tiên phong triển khai nhiều mô hình đổi mới:
+            xây dựng hệ thống thi thử trực tuyến LMS với
+            <u>hơn 10.000 câu hỏi</u>, triển khai phong trào “phòng giúp phòng,
+            trường giúp trường, bộ môn giúp bộ môn”, tổ chức hàng nghìn buổi phụ
+            đạo miễn phí, và kiên trì thực hiện mô hình “đảm bảo chất lượng”
+            trên toàn tỉnh. Các biện pháp này giúp học sinh làm quen với đề thi
+            mới và nâng cao năng lực học tập.
+          </p>
+
+          <p>
+            <mark><strong>4. Vị thế và vai trò sau sáp nhập</strong></mark
+            ><br />
+            Việc sáp nhập Trường Cao đẳng Sư phạm thành Trường Đại học Nghệ An
+            đánh dấu bước đi quan trọng trong phát triển giáo dục địa phương.
+            Ngành tiếp tục khẳng định vị thế tiên phong trong đổi mới căn bản,
+            toàn diện giáo dục, tích cực tham mưu chính sách hỗ trợ các trường
+            dân tộc bán trú và triển khai các chương trình giáo dục kỹ năng
+            sống, ý thức pháp luật.
+          </p>
+
+          <p>
+            <mark><strong>5. Định hướng phát triển giai đoạn mới</strong></mark
+            ><br />
+            Bước sang năm học 2025–2026, Nghệ An đặt mục tiêu
+            <u
+              >hiện đại hóa, đột phá phát triển, đổi mới sáng tạo, kết nối bền
+              vững</u
+            >. Với phương châm “nhà trường là nền tảng, thầy cô là động lực, học
+            sinh là trung tâm”, toàn ngành sẽ tiếp tục ứng dụng công nghệ, đổi
+            mới phương pháp giảng dạy, nâng cao chất lượng giáo dục, đáp ứng yêu
+            cầu phát triển và hội nhập trong giai đoạn mới.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a
+            href="https://baolaocai.vn/giao-duc-lao-cai-on-dinh-sau-sap-nhap-huong-toi-phat-trien-toan-dien-post648515.html"
+            >wiki-Lào Cai</a
+          >
+          )
+        </p>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="KINHTE">
+        <br />
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        </header>
+        <article>
+          <h2 style="text-align: left">TÓM TẮT PHÁT TRIỂN KINH TẾ NGHỆ AN</h2>
+          <p>
+            <mark
+              ><strong>Kinh tế - xã hội Nghệ An năm 2018 và 2019</strong></mark
+            >
+
+            Năm 2019, GRDP toàn tỉnh tăng trưởng <u>9,03%</u> so với năm 2018,
+            GRDP thực tế đạt <u>88.258</u> tỉ đồng, cơ cấu kinh tế chuyển dịch
+            đúng hướng. Thu ngân sách ước đạt <u>15.500</u> tỷ đồng, đạt
+            <u>114,8%</u> dự toán và tăng <u>10,2%</u> so với thực hiện năm
+            2018. Chi ngân sách năm 2019 ước đạt <u>24.945,44</u> tỷ đồng, đạt
+            <u>102,5%</u> dự toán. Năm 2018, Nghệ An là đơn vị hành chính Việt
+            Nam đông thứ 4 về số dân, xếp thứ 10 về Tổng sản phẩm trên địa bàn
+            (GRDP), xếp thứ 54 về GRDP bình quân đầu người, đứng thứ 19 về tốc
+            độ tăng trưởng GRDP. Với <u>3.157.100</u> người dân, số liệu kinh tế
+            - xã hội thống kê GRDP đạt <u>115.676</u> tỉ đồng (tương ứng với
+            <u>5,0240</u> tỉ USD), GRDP bình quân đầu người đạt
+            <u>36,64</u> triệu đồng (<u>1.591</u> USD), tốc độ tăng trưởng GRDP
+            đạt <u>8,77%</u>.
+          </p>
+        </article>
+
+        <figure
+          style="width: 80%; margin: auto"
+          class="w3-center chart-container"
+        >
+          <figcaption>
+            <h2 style="text-align: center">Biểu đồ GRDP Nghệ An 2016–2024</h2>
+            <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
+          </figcaption>
+          <canvas id="grdpChartLaoCai" class="w3-center"></canvas>
+        </figure>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+          const ctx = document
+            .getElementById("grdpChartLaoCai")
+            .getContext("2d");
+
+          const grdpData = [
+            12100, 13500, 15000, 16500, 18000, 19500, 21000, 22500, 24000,
+          ];
+
+          const growthRate = [
+            0.04, 0.05, 0.055, 0.06, 0.065, 0.07, 0.075, 0.08, 0.07,
+          ];
+
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+              ],
+              datasets: [
+                {
+                  label: "GRDP Lào Cai (tỷ đồng)",
+                  data: grdpData,
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: growthRate.map((v) => v * 100),
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { position: "top" },
+                title: {
+                  display: true,
+                  text: "GRDP và Tăng trưởng kinh tế Lào Cai (2016–2024)",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: false,
+                  position: "left",
+                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: { drawOnChartArea: false },
+                  title: { display: true, text: "Tăng trưởng (%)" },
+                },
+                x: { title: { display: true, text: "Năm" } },
+              },
+            },
+          });
+        </script>
+
+        <p style="font-size: 14px; text-align: center; margin-top: 5px">
+          Nguồn:Tổng cục Thống kê Việt Nam và ước tính từ số liệu GRDP của tỉnh
+          Nghệ An.
+          <br />
+          <a
+            href="https://vi.wikipedia.org/wiki/Ngh%E1%BB%87_An"
+            target="_blank"
+            >wiki Nghệ An</a
+          >
+        </p>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="AMTHUC">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+          <h2>-Nghệ An có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        </header>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cháo lươn Vinh đặc sản Nghệ An
+              </summary>
+              <p>
+                Nghệ An nổi tiếng là "xứ sở của các loài lươn", cháo lươn nóng
+                hổi với những hạt gạo tẻ được ninh mềm. Thịt lươn vừa mềm vừa
+                ngọt được nêm nếm vừa phải cùng những hạt tiêu cay nồng kích
+                thích vị giác đã tạo ra một tô cháo đầy thơm ngon, hấp dẫn.
+              </p>
+              -Giá tham khảo:Khoảng 30.000 đồng - 60.000 đồng/tô<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/2yMejeB4HU1aoYqu6"
+                >154 Mai Hắc Đế, Hà Huy Tập, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202201120953272471.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Mực nhảy nướng Cửa Lò
+              </summary>
+              <p>
+                Cửa Lò không chỉ nổi tiếng với những bài biển xanh mát mà Cửa Lò
+                còn nổi tiếng với món mực nháy (hay còn gọi là mực nhảy) nướng.
+                Những con mực tươi sống được bắt từ sáng sớm và mang đi chế biến
+                trong ngày.
+              </p>
+              <p>
+                Mực nhảy được nướng trên những bếp than nghi ngút hương thơm.
+                Mực giòn ngọt được chấm thêm tương ớt cay nồng hoặc muối tiêu
+                chanh chua chua mặn mặn khiến món mực nháy thêm tròn vị.
+              </p>
+              -Giá tham khảo: Khoảng 400.000 đồng - 700.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/R5XyzxiuGZTZaCWm6RP59+3VG"
+                >Khối 1, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011333043344.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh Mướt Nghệ An
+              </summary>
+              <p>
+                Cũng gần giống như loại bánh cuốn ngoài Bắc, bánh ướt miền Nam,
+                thứ bánh đặc sản Nghệ An này cũng mang một “hương vị” đặc biệt
+                không thể lẫn vào đâu.
+              </p>
+              <p>
+                Nguyên liệu chính cho món bánh Mướt này là gạo tẻ đem xay nhuyễn
+                thành bột, ngâm trước khi đem lên trán để cho bánh được nở phồng
+                lên. Bánh có thể ăn kèm thịt nướng, chả lụa, nước chấm bánh điệu
+                nghệ “riêng” của người xứ Nghệ.
+              </p>
+              -Giá tham khảo:Khoảng 15.000 đồng - 25.000 đồng/phần<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/n9cx9FksHzWuskUL8"
+                >68 Đường Hà Huy Tập, Hà Huy Tập, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011334072786.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cháo canh Nghệ An
+              </summary>
+              <p>
+                Lý do để gọi món cháo canh là vì nước dùng phải nấu cho sánh sệt
+                lại như cháo. Để làm ra những sợi bánh mềm, người ta thường dùng
+                bột mì pha thêm chút bột gạo.
+              </p>
+              <p>
+                Sau khi nhào cho nhuyễn, mịn sẽ cán mỏng rồi cắt thành những sợi
+                nhỏ tròn. Điểm thu hút món cháo canh này nằm ở nước dùng được
+                nấu từ xương heo cùng các gia vị, có độ sánh và ngọt từ xương do
+                được hầm lâu.
+              </p>
+              -Giá tham khảo:Khoảng 15.000 đồng - 30.000 đồng/tô<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/7QSVqX3SGPjpw69a9"
+                >7 Võ Thị Sáu, Bến Thủy, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011337334837.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh ngào Nghệ An
+              </summary>
+              <p>
+                Bánh Ngào Nghệ An là món ăn đơn giản được phủ nhiều mật lại có
+                thêm mùi thơm của gừng, nếu được thưởng thức vào lúc trời mưa
+                phùn hay se se lạnh ăn nóng sẽ rất ngon.
+              </p>
+              <p>
+                Vỏ ngoài dẻo thơm, béo bùi của bột nếp cùng vị ngọt được bao phủ
+                bởi mật, thêm chút hương thơm cay nồng từ gừng.
+              </p>
+              -Giá tham khảo:Khoảng 5.000 đồng - 10.000 đồng/phần<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/bBgWddQe6izoV6Ya9"
+                >030 Đào Tấn, Quang Trung, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011341176512.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh đa xúc hến
+              </summary>
+              <p>
+                Bánh đa xúc hến là một món ăn không hề xa lạ của người dân xứ
+                Nghệ. Dân giã nhưng đậm đà y như tình người của những người dân
+                miền Trung vậy.
+              </p>
+              <p>
+                Hến lấy được từ sông Lam, sau khi tách vỏ, xào cùng hành mỡ béo
+                ngậy và thơm lừng. Kết hợp với miếng bánh đa giòn rụm, ăn hoài
+                không ngán.
+              </p>
+              -Giá tham khảo:Khoảng 30.000 đồng - 60.000 đồng/phần<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/nj5rKTeRvMybPubs6"
+                >203 Phan Chu Trinh, Quang Trung, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011343292519.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Mọc cua Bể
+              </summary>
+              <p>
+                Để có được món ăn hấp dẫn như này, người đầu bếp đã mất rất
+                nhiều tâm sức. Cua được tách thịt, gỡ nhỏ rồi trộn đều thành hỗn
+                hợp cùng giò sống, nấm hương, mộc nhĩ, hành khô sau khi nêm nếm
+                gia vị vừa phải thì đắp lên mai cua đem đi hấp. Hương vị đặc sắc
+                này khiến thực khách vấn vương mãi không quên về Cửa Lò.
+              </p>
+              -Giá tham khảo:Khoảng 12.000 đồng - 15.000 đồng/miếng<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/zSM8o9VNN18PJkAD6"
+                >83 Bạch Liêu, Bến Thủy, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011344150453.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh bèo Nghệ An
+              </summary>
+              <p>
+                Món bánh bèo được làm hoàn toàn từ bột lọc nên trong hơn so với
+                bánh bèo ở cùng khác, kết hợp với thịt tôm và hành mỡ phi lên,
+                rưới một chút nước mắm cay nồng ăn kèm phải nói là không kìm
+                lòng được, ăn một miếng là nhớ cả đời.
+              </p>
+              -Giá tham khảo: Khoảng 15.000 đồng –20.000 đồng/dĩa<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/K815EuAeDC4aPpsq7"
+                >26 Đ. Trần Huy Liệu, Khối 3, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011345352700.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cháo nghêu Cửa Lò
+              </summary>
+              <p>
+                Món ăn thú vị của Cửa Lò về đêm dành cho du khách là món cháo
+                Nghêu nóng hổi thơm ngon. Hương thơm nhẹ nhàng của gạo hòa quyện
+                với vị ngọt tự nhiên của nghêu tạo nên món ăn đầy thanh nhã. Húp
+                1 tô cháo rồi về ngủ thì phải nói là vừa ấm bụng vừa bổ dưỡng.
+              </p>
+              -Giá tham khảo:Khoảng 15.000 đồng – 25.000 đồng/tô<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/BHGmMqEc1367xwxw7"
+                >203 Phan Chu Trinh, Quang Trung, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011348299101.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Gỏi bê Nam Đàn
+              </summary>
+              <p>
+                Gỏi bê thật ra là giò bê Nam, Gỏi bê Đàn Nghệ An của Tân Lộc
+                quán với nguyên liệu chính là thịt me (thịt bê) nguyên miếng, bì
+                bê, gia vị gia truyền, hạt tiêu, nước mắm nhĩ nguyên chất đặc
+                sản Cửa Lò, hoàn toàn không có chất bảo quản hay bất kì phụ gia
+                nào. Tất cả được cuộn tròn và gói lại thành giò.
+              </p>
+              -Giá tham khảo: Khoảng 200.000 đồng - 300.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/8sRqdjYKD8uEMqDt9"
+                >PFR4+Q5F, Nam Nghĩa, Nam Đàn, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011350475156.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh gai xứ Dừa
+              </summary>
+              <p>
+                Để có được một chiếc bánh gai ngon đúng vị thì khâu chuẩn bị
+                nguyên liệu cũng đã vô cùng cầu kì từ nếp, đậu xanh, lá gai tươi
+                và dừa khô… Bánh gai xứ Dừa luôn dậy mùi thơm của lá gai, ngọt
+                bùi của nhân đậu tạo nên nét độc đáo ngon lạ miệng cho bao người
+                tới thưởng thức.
+              </p>
+              -Giá tham khảo:Khoảng 2.000 đồng – 5.000 đồng/cái<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/85gLYk1B6oHb5gBF9"
+                >XXFX+QHF, QL7, Tường Sơn, Anh Sơn, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/nghe-an-co-dac-san-gi-15-dac-san-nghe-an-mua-lam-qua-202207051341357681.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh cu đơ
+              </summary>
+              <p>
+                Kẹo Cu Đơ là một loại Kẹo đậu phộng được làm từ Mật Mía, Gừng,
+                Mạch nha và Hạt Lạc, nấu với công thức đặc biệt, sau đó dùng
+                Bánh tráng ép lại với nhau tạo nên một món ăn vô cùng hấp dẫn.
+                Mọi người thường mua về làm quà biếu, hương vị lại khá ngon và
+                dễ ăn.
+              </p>
+              -Giá tham khảo: Khoảng 25.000 đồng - 50.000 đồng.<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/QZ9SJJ6AwGoAh1mm7"
+                >66 Đinh Công Tráng, Quang Trung, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-202107011351464817.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Nhút Thanh Chương
+              </summary>
+              <p>
+                Đến Nghệ An mà chưa thưởng thức món đặc sản đặc biệt này thì
+                thật đáng tiếc đó. Nhút là cách gọi quen thuộc của người miền
+                Trung, là quả mít muối mặn ăn với cơm. Món Nhút ngon phải giòn
+                giòn, mặn của muối, cay xè của ớt và dậy mùi thơm của mít, thanh
+                ngọt của mía đường.
+              </p>
+              -Giá tham khảo:Khoảng 40.000 - 50.000 VNĐ/hộp<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/CGvkrhPngSMMB5ec8"
+                >Tầng 1, Chung Cư Tân Phát, Lê Mao, Phường Vinh Tân, Thành Phố
+                Vinh, Tỉnh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/nghe-an-co-dac-san-gi-15-dac-san-nghe-an-mua-lam-qua-202206112051316628.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Tương Nam Đàn
+              </summary>
+              <p>
+                Tương Nam Đàn với nguyên liệu được làm hoàn toàn từ thiên nhiên
+                như: đậu nành, nếp, muối không Iốt và nước. Hạt đậu nành phải
+                hạt đều, chắc mẩy, khi được rang chín sẽ để nguội, sau đó đem
+                xay nhưng không được xay nát, sảy bỏ vỏ, cho vào nồi nấu hơn 24h
+                rồi cho vào chum ủ. Lưu ý, trong quá trình ngâm ủ, hàng ngày
+                phải đánh tương thường xuyên.
+              </p>
+              -Giá tham khảo:Khoảng 30.000 - 50.000 VNĐ/lít<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/yEp8p4m4twwFpGN18"
+                >14 Thăng Long, Nghi Kim, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/nghe-an-co-dac-san-gi-15-dac-san-nghe-an-mua-lam-qua-202206112053125512.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cam Xã Đoài
+              </summary>
+              <p>
+                Cam xã Đoài là thương hiệu hoa quả cao cấp của Nghệ An. Loại
+                trái cây này nổi tiếng đến mức thường xuyên “cháy hàng”, nhiều
+                khi không đủ để bán, vỏ rất mỏng, khi chín chuyển màu vàng tươi,
+                múi cam mọng nước và có vị ngọt thanh rất đặc biệt.
+              </p>
+              -Giá tham khảo:Khoảng 80.000 - 100.000 VNĐ/quả<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/yZVWPiF2NSG2Soup9"
+                >Phố Cao Thắng, Vinh Tân, Vinh, Nghệ An, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/07/01/1364712/nghe-an-co-dac-san-gi-15-dac-san-nghe-an-mua-lam-qua-202206112054195858.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/12-mon-an-dac-san-o-nghe-an-ban-khong-the-bo-qua-1364712"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DULICH">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+          <h2>-Nghệ An có những điểm du lịch nổi tiếng như:</h2>
+        </header>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Cửa Lò
+              </summary>
+              <p class="detail-content">
+                Biển Cửa Lò sở hữu dải cát trắng mịn cùng nước biển trong xanh.
+                Sóng nhẹ nhàng, thích hợp cho những ai thích tận hưởng vẻ đẹp
+                yên bình của biển. Bên cạnh đó, hải sản Cửa Lò còn nổi tiếng
+                tươi ngon.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-1.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                VinWonders Cửa Hội
+              </summary>
+              <p class="detail-content">
+                VinWonders Cửa Hội là tổ hợp vui chơi – giải trí đầy ấn tượng
+                bên bờ biển Cửa Lò, mang đến không gian hiện đại với nhiều hoạt
+                động hấp dẫn cho cả gia đình. Tại đây, du khách có thể trải
+                nghiệm cáp treo vượt biển ngắm trọn vẻ đẹp đảo Song Ngư, thỏa
+                thích vui chơi tại công viên nước “Thiên đường nhiệt đới”, khám
+                phá khu phố thương mại sầm uất hay check-in giữa những công
+                trình mang phong cách châu Âu độc đáo. Với vị trí thuận lợi gần
+                trung tâm thành phố Vinh cùng hệ sinh thái giải trí – ẩm thực đa
+                dạng, VinWonders Cửa Hội trở thành điểm đến lý tưởng cho những
+                ai muốn tận hưởng một ngày nghỉ trọn vẹn giữa biển xanh và không
+                khí lễ hội sôi động của Nghệ An.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/9652234516405/VinWonders-Cua-Hoi-Tickets-d4865cda-4d42-435b-b6a3-20cb6aa340e5.png?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Vườn quốc gia Pù Mát
+              </summary>
+              <p class="detail-content">
+                Vườn quốc gia Pù Mát sở hữu hệ động thực vật phong phú và cảnh
+                quan thiên nhiên hùng vĩ. Đặc biệt, thác Kèm cao 150m chảy suốt
+                bốn mùa. Đây là điểm đến lý tưởng cho những ai yêu thích
+                trekking và khám phá thiên nhiên hoang dã.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-2.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đảo chè Thanh Chương
+              </summary>
+              <p class="detail-content">
+                Đảo chè Thanh Chương nổi bật với những đảo chè xanh mướt nằm
+                giữa lòng hồ, tạo nên cảnh sắc thơ mộng. Du khách có thể thuê
+                thuyền để dạo quanh các đảo chè, tận hưởng không khí trong lành
+                và ghi lại những khoảnh khắc đẹp.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-3.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Làng Sen quê Bác
+              </summary>
+              <p class="detail-content">
+                Làng Sen (hay còn được biết đến với tên gọi là làng Kim Liên) là
+                quê hương của Chủ tịch Hồ Chí Minh. Du khách sẽ được tham quan
+                ngôi nhà tranh 5 gian, ao sen, vườn chuối. Không gian thanh bình
+                nơi đây mang đến cảm giác thiêng liêng và tự hào. Đây là địa
+                điểm nhất định bạn phải ghé thăm khi đến Nghệ An.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/sEDvvaLn-dia-diem-du-lich-nghe-an-4.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Trại cừu Yên Thành
+              </summary>
+              <p class="detail-content">
+                Trại cừu Yên Thành là điểm check-in độc đáo với khung cảnh đồng
+                cỏ bạt ngàn và những đàn cừu dễ thương. Khung cảnh núi rừng hùng
+                vĩ ở nơi đây mang đến cho khách du lịch những bức ảnh tuyệt đẹp.
+                Nơi đây sẽ là điểm đến lý tưởng cho các gia đình nhỏ.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-5.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đỉnh Pu Xai Lai Len
+              </summary>
+              <p class="detail-content">
+                Pu Xai Lai Len là ngọn núi cao nhất của dãy Bắc Trường Sơn, đánh
+                dấu ranh giới giữa Việt Nam và Lào. Với độ cao 2.700m so với mực
+                nước biển, đỉnh núi này quanh năm chìm trong biển mây huyền ảo.
+                Chinh phục Pu Xai Lai Len, du khách được tận hưởng vẻ đẹp thiên
+                nhiên hoang sơ, đầy mê hoặc.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-6.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Quảng trường và tượng Chủ tịch Hồ Chí Minh
+              </summary>
+              <p class="detail-content">
+                Quảng trường Hồ Chí Minh là biểu tượng lịch sử của tỉnh Nghệ An.
+                Điểm nhấn nổi bật nhất chính là tượng Bác Hồ được chạm khắc tỉ
+                mỉ. Bên cạnh đó, không gian quảng trường rộng lớn là nơi thích
+                hợp để tản bộ và tưởng nhớ về cội nguồn.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-7.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đền Chung Sơn
+              </summary>
+              <p class="detail-content">
+                Đền Chung Sơn là nơi thờ tự gia tiên của Chủ tịch Hồ Chí Minh.
+                Đền được xây dựng theo kiến trúc truyền thống. Với cảnh sắc
+                tuyệt vời, đền Chung Sơn là điểm đến lý tưởng cho những ai yêu
+                thích khám phá văn hóa, lịch sử.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-8.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Cửa Hiền
+              </summary>
+              <p class="detail-content">
+                Biển Cửa Hiền tọa lạc ngay gần con đường thiên lý Bắc – Nam,
+                cách trung tâm thành phố Vinh chỉ khoảng 35km. Với đường bờ biển
+                trải dài, bãi cát trắng mịn và khung cảnh thiên nhiên hữu tình,
+                nơi đây là một trong những tọa độ nghỉ dưỡng hút khách nhất xứ
+                Nghệ.
+              </p>
+              <p>
+                Đến với bãi biển xinh đẹp này, du khách sẽ có dịp tận hưởng bầu
+                không khí trong lành, làn nước trong xanh, mát lạnh cùng rất
+                nhiều hoạt động vui chơi và nghỉ dưỡng hấp dẫn. Đặc biệt, biển
+                Cửa Hiền còn nằm rất gần các địa điểm du lịch Nghệ An nổi tiếng
+                khác. Sau khi nghỉ dưỡng tại đây, bạn có thể ghé thăm các danh
+                thắng trứ danh như: biển Cửa Hội, vườn quốc gia Pù Mát, đồi chè
+                Thanh Chương, đền Cuông…
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-9-1024x682.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Cánh đồng hoa hướng dương
+              </summary>
+              <p class="detail-content">
+                Cánh đồng hoa hướng dương tại Nghĩa Đàn là một trong những địa
+                điểm check-in nổi tiếng nhất xứ Nghệ. Đến với nơi đây, du khách
+                sẽ không khỏi mê đắm trước khung cảnh lãng mạn của thiên nhiên,
+                hoa lá. Sắc vàng rực rỡ của hoa, sắc xanh mơn mởn của lá như bao
+                trùm cả cánh đồng bao la, tạo nên một cảnh tượng nên thơ đến lạ
+                kỳ.
+              </p>
+              <p>
+                Nếu muốn ghi lại những tấm hình “sống ảo” ấn tượng cùng cánh
+                đồng hoa hướng dương thì du khách nên đến đây vào tầm tháng 3 –
+                tháng 4 hoặc tháng 11 – tháng 12. Lúc này là thời điểm hoa hoa
+                dương đương độ khoe sắc, thời tiết cũng cực kỳ thuận lợi, lý
+                tưởng cho bạn dạo chơi và khám phá.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-10.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đảo Hòn Ngư
+              </summary>
+              <p class="detail-content">
+                Hòn Ngư là một trong những hòn đảo đẹp nhất Nghệ An, sở hữu cảnh
+                quan thiên nhiên kỳ vĩ với những rặng san hô tuyệt đẹp. Đảo gồm
+                hai hòn lớn nhỏ sát nhau, tạo thành một cảnh quan độc đáo giữa
+                lòng biển cả.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-11.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đảo Lan Châu
+              </summary>
+              <p class="detail-content">
+                Đảo Lan Châu là một “viên ngọc quý” giữa biển khơi, nổi bật với
+                ngọn hải đăng và lầu Nghinh Phong của vua Bảo Đại. Từ trên đỉnh
+                đảo, du khách có thể phóng tầm mắt chiêm ngưỡng toàn cảnh bãi
+                biển Cửa Lò với những con thuyền đánh cá nhấp nhô trên sóng.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-12.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Bãi Lữ
+              </summary>
+              <p class="detail-content">
+                Bãi Lữ có những ngọn núi vươn ra biển, tạo thành một vịnh nhỏ
+                vừa có nước biển trong vắt, vừa có rừng thông xanh mướt. Đặc
+                biệt, bãi Lữ còn nổi tiếng với những khu resort nghỉ dưỡng cao
+                cấp, thích hợp cho những ai muốn tìm kiếm không gian thư giãn,
+                yên tĩnh.
+              </p>
+              <figure>
+                <img
+                  src="https://ik.imagekit.io/tvlk/blog/2025/03/dia-diem-du-lich-nghe-an-13.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-nghe/516739"
+                    target="_blank"
+                    >traveloka.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="tiemnang">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">
+            TIỀM NĂNG PHÁT TRIỂN
+          </h1>
+        </header>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <strong><mark>1. Vị trí địa lý và kết nối vùng</mark></strong
+            ><br />
+            Nghệ An nằm ở trung tâm vùng Bắc Trung Bộ, kết nối hai miền Bắc –
+            Nam.<br />
+            Nằm trên hành lang kinh tế Đông – Tây, nối liền Myanmar – Thái Lan –
+            Lào – Việt Nam qua Quốc lộ <u>7</u>, thông ra biển Đông qua cảng Cửa
+            Lò.<br />
+            Có vai trò chiến lược về thương mại, logistics và giao thương quốc
+            tế.
+          </p>
+
+          <p>
+            <strong><mark>2. Hệ thống cơ sở hạ tầng đa dạng</mark></strong
+            ><br />
+            Giao thông đầy đủ: đường bộ, đường sắt, đường biển, đường thủy nội
+            địa, sân bay.<br />
+            Cảng biển và sân bay hỗ trợ phát triển kinh tế biển và logistics.
+          </p>
+
+          <p>
+            <strong><mark>3. Tiềm năng kinh tế và xã hội</mark></strong
+            ><br />
+            Nhiều lợi thế để phát triển công nghiệp, nông nghiệp ứng dụng công
+            nghệ cao, du lịch, y tế, giáo dục – đào tạo và khoa học công
+            nghệ.<br />
+            Có khả năng trở thành trung tâm thương mại, logistics và dịch vụ của
+            khu vực Bắc Trung Bộ.
+          </p>
+
+          <p>
+            <strong><mark>4. Đặc điểm dân số và diện tích</mark></strong
+            ><br />
+            Dân số <u>đông</u>, diện tích <u>rộng lớn</u>, tạo tiềm năng phát
+            triển thị trường nội địa nhưng cũng đòi hỏi quản lý và tổ chức bộ
+            máy hiệu quả.
+          </p>
+
+          <p>
+            <strong><mark>5. Chính sách phát triển</mark></strong
+            ><br />
+            UBND tỉnh đề xuất <u>18</u> chính sách thuộc <u>5</u> nhóm:<br />
+            1. Quản lý tài chính – ngân sách nhà nước (<u>5</u> chính sách)<br />
+            2. Quản lý đô thị, tài nguyên, môi trường (<u>4</u> chính sách)<br />
+            3. Quản lý đầu tư (<u>4</u> chính sách)<br />
+            4. Phát triển kinh tế biển (<u>2</u> chính sách)<br />
+            5. Tổ chức bộ máy và biên chế (<u>3</u> chính sách)<br />
+            Mục tiêu: phát huy tiềm năng, tạo cơ chế đặc thù phù hợp với Nghị
+            quyết số 39-NQ/TW, đồng thời không phá vỡ tính đồng bộ với hệ thống
+            pháp luật.
+          </p>
+
+          <p>
+            <strong><mark>6. Thuận lợi và thách thức</mark></strong
+            ><br />
+            Thuận lợi: đã có kinh nghiệm từ Nghị quyết <u>36/2021/QH15</u>, cơ
+            sở hạ tầng hoàn chỉnh, vị trí chiến lược, tiềm năng kinh tế đa
+            dạng.<br />
+            Thách thức: quy mô dân số và diện tích lớn, cần cơ chế đặc thù để
+            phân cấp, phân quyền, thu hút doanh nghiệp và phát triển bền vững.
+          </p>
+
+          <p>
+            <strong><mark>Kết luận</mark></strong
+            ><br />
+            Nghệ An sau sáp nhập có vị trí chiến lược, cơ sở hạ tầng đồng bộ và
+            tiềm năng kinh tế – xã hội lớn, đặc biệt trong thương mại,
+            logistics, công nghiệp, nông nghiệp công nghệ cao, du lịch biển, y
+            tế và giáo dục.<br />
+            Để phát triển bền vững, tỉnh cần cơ chế chính sách đặc thù phù hợp
+            với Nghị quyết số 39-NQ/TW, tận dụng tối đa lợi thế địa lý, hạ tầng
+            và nguồn lực dân số, đồng thời đảm bảo tính đồng bộ với hệ thống
+            pháp luật quốc gia.
+          </p>
+        </article>
+        <p style="font-size: 15px" class="w3-center">
+          (Nguồn thông tin:
+          <a
+            href="http://baokiemtoan.vn/tan-dung-tiem-nang-loi-the-de-phat-trien-tinh-nghe-an-nhanh-va-ben-vung-30675.html"
+            target="_blank"
+            >baokiemtoan.vn</a
+          >)
+        </p>
+      </section>
+      <hr />
+    </main>
+
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("w3-hide");
+      }
+    </script>
+    <script>
+      const menuScroll = document.querySelector(".menu-scroll");
+      const btnLeft = document.querySelector(".left-btn");
+      const btnRight = document.querySelector(".right-btn");
+      const step = 200;
+      if (btnRight && btnLeft && menuScroll) {
+        btnRight.addEventListener("click", () => {
+          menuScroll.scrollLeft += step;
+        });
+        btnLeft.addEventListener("click", () => {
+          menuScroll.scrollLeft -= step;
+        });
+      }
+    </script>
+  </body>
+</html>
